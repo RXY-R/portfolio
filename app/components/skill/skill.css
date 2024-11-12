@@ -1,0 +1,13 @@
+.main_skill_container {
+  user-select: none;
+  height: 26px;
+  border-radius: 8px;
+  padding: 0 10px 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--skills-box-color);
+  h1 {
+    font-size: 0.8rem;
+    color: var(--box-text-color);
+  }
+}

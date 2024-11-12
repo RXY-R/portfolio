@@ -1,0 +1,53 @@
+.edu_info_container {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  img {
+    margin: 0 12px 0;
+    border-radius: 20px;
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+  }
+}
+
+.edu_details_container {
+  width: 100%;
+  height: 100%;
+  p {
+    font-size: 0.8rem;
+    color: grey;
+  }
+}
+
+.edu_svg {
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.edu_svg.hovered {
+  opacity: 1;
+  transform: translateX(50%);
+}
+
+.date_container {
+  margin-left: auto;
+  width: 220px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: center;
+  color: grey;
+}
+
+@media only screen and (max-width: 480px) {
+  .edu_info_container {
+    width: 300px;
+  }
+  .date_container {
+    display: none;
+  }
+}
