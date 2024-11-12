@@ -89,7 +89,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="flex flex-col gap-6 h1_font">
+        <section id="education" className="flex flex-col gap-6 h1_font">
           <h1>Education</h1>
           <Education
             img="https://files.catbox.moe/g1zy39.jpg"
@@ -111,7 +111,10 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full flex flex-col gap-1 h-32 h1_font">
+        <section
+          id="skills"
+          className="w-full flex flex-col gap-1 h-32 h1_font"
+        >
           <h1>Skills</h1>
           <div className="flex flex-wrap gap-1 w-full">
             <Skill skill="React" />
@@ -141,7 +144,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+        <section
+          id="projects"
+          className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto"
+        >
           <div className="project_card">
             <a target="_blank" href="https://github.com/RXY-R">
               <video
@@ -309,7 +315,14 @@ export default function Home() {
             <div className="w-[2px] h-9 bg-[#636363]"></div>
 
             <a
-              onClick={() => window.scrollTo({ top: 388, behavior: "smooth" })}
+              onClick={() => {
+                const target = document.getElementById("education");
+                if (target) {
+                  const offsetTop =
+                    target.getBoundingClientRect().top + window.pageYOffset;
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                }
+              }}
             >
               <div className="p-3">
                 <svg
@@ -331,7 +344,14 @@ export default function Home() {
             </a>
 
             <a
-              onClick={() => window.scrollTo({ top: 650, behavior: "smooth" })}
+              onClick={() => {
+                const target = document.getElementById("projects");
+                if (target) {
+                  const offsetTop =
+                    target.getBoundingClientRect().top + window.pageYOffset;
+                  window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                }
+              }}
             >
               <div className="p-3">
                 <svg
