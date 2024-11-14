@@ -27,3 +27,15 @@ pnpm build
 # or
 bun build
 ```
+
+# Deploy locally:
+
+```bash
+npm run start
+# or
+yarn start
+# or
+pnpm start
+# or
+bun start
+```
