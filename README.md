@@ -2,7 +2,7 @@
   <h1 style="color:#4CAF50;">🌐 My Personal Portfolio</h1>
   <p><b>Feel free to use this as a template, but I won’t be able to assist with any issues.</b></p>
   
-  ![Next.js](https://img.shields.io/badge/Next.js-v15.0-blue)
+  ![Next.js](https://img.shields.io/badge/Next.js-v15.0-green)
   ![React](https://img.shields.io/badge/React-19.0-green)
 </div>
 
