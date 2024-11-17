@@ -89,7 +89,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="education" className="flex flex-col gap-6 h1_font">
+        <section className="flex flex-col gap-6 h1_font">
           <h1>Education</h1>
           <Education
             img="https://files.catbox.moe/g1zy39.jpg"
@@ -111,10 +111,7 @@ export default function Home() {
           />
         </section>
 
-        <section
-          id="skills"
-          className="w-full flex flex-col gap-1 h-32 h1_font"
-        >
+        <section className="w-full flex flex-col gap-1 h-32 h1_font">
           <h1>Skills</h1>
           <div className="flex flex-wrap gap-1 w-full">
             <Skill skill="React" />
@@ -144,10 +141,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="projects"
-          className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto"
-        >
+        <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
           <div className="project_card">
             <a target="_blank" href="https://github.com/RXY-R">
               <video
@@ -173,7 +167,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-1 mt-[auto] mx-1 my-2">
+              <div className="flex flex-wrap gap-1 mt-auto mx-1 my-2">
                 <div className="project_card_badge">
                   <h1>React</h1>
                 </div>
@@ -249,7 +243,11 @@ export default function Home() {
             <h1>Contact</h1>
           </div>
 
-          <div className="w-full text-center text-[var(--primary-text-color)] text-xl font-bold">
+          <div className="w-full flex flex-col gap-5 text-center text-[var(--primary-text-color)] text-xl font-bold">
+            <p className="text-[var(--second-text-color)] text-lg font-normal">
+              Ready to make it Official?
+            </p>
+
             <a href="mailto:angshusadiq@gmail.com">Get in touch</a>
           </div>
 
@@ -315,14 +313,7 @@ export default function Home() {
             <div className="w-[2px] h-9 bg-[#636363]"></div>
 
             <a
-              onClick={() => {
-                const target = document.getElementById("education");
-                if (target) {
-                  const offsetTop =
-                    target.getBoundingClientRect().top + window.pageYOffset;
-                  window.scrollTo({ top: offsetTop, behavior: "smooth" });
-                }
-              }}
+              onClick={() => window.scrollTo({ top: 388, behavior: "smooth" })}
             >
               <div className="p-3">
                 <svg
@@ -344,14 +335,7 @@ export default function Home() {
             </a>
 
             <a
-              onClick={() => {
-                const target = document.getElementById("projects");
-                if (target) {
-                  const offsetTop =
-                    target.getBoundingClientRect().top + window.pageYOffset;
-                  window.scrollTo({ top: offsetTop, behavior: "smooth" });
-                }
-              }}
+              onClick={() => window.scrollTo({ top: 650, behavior: "smooth" })}
             >
               <div className="p-3">
                 <svg
