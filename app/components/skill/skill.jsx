@@ -1,5 +1,4 @@
 'use client'
-import {react} from 'react'
 import './skill.css'
 export default function Skill({skill}){
     return(
