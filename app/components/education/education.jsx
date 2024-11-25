@@ -1,5 +1,5 @@
 "use client";
-import { react, useState } from "react";
+import { useState } from "react";
 import "./education.css";
 
 export default function Education({ img, name, more_info, date }) {
