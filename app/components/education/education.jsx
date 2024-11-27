@@ -4,7 +4,7 @@ import "./education.css";
 
 export default function Education({ img, name, more_info, date }) {
   const [InHovering, setInHovering] = useState(false);
-
+  
   return (
     <div
       className="cursor-pointer max-[420px]w-[624px] h-[48px] flex"
