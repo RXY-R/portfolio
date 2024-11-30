@@ -12,7 +12,6 @@ import { useState, useEffect, useRef } from "react";
 //#region Other imports
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { TextPlugin } from "gsap/TextPlugin";
 //#endregion
 
 //#region Theme Icons
