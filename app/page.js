@@ -52,7 +52,6 @@ const DarkIcon = () => (
 );
 //#endregion
 
-
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
 
