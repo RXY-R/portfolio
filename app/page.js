@@ -253,7 +253,7 @@ export default function Home() {
                   Oct 2024 - Oct 2024
                 </p>
                 <p className="text-[var(--second-text-color)] text-sm">
-                  I created this portfolio for my sister using Next.js, with
+                  I created this portfolio using Next.js, with
                   MySQL as the database. Data is served to the webpage through a
                   Node.js Express API.
                 </p>
