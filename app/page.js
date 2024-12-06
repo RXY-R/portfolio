@@ -112,7 +112,7 @@ export default function Home() {
       <div ref={contentRef} className="main_container">
         <section className="intro_container">
           <div className="intro">
-            <h1>Hi, I'm Angshu 👋</h1>
+            <h1>Hi, I'm Orthee 👋</h1>
             <p>
               <strong>Software</strong> & <strong>Web Developer.</strong> I love
               building things and helping people. Very active on Facebook and
@@ -247,7 +247,7 @@ export default function Home() {
             <div className="project_card_details">
               <div className="mx-1">
                 <h1 className="font-semibold my-1">
-                  A Portfolio For My Sister
+                  My Previous Portfolio
                 </h1>
                 <p className="text-[var(--third-text-color)]">
                   Oct 2024 - Oct 2024
@@ -312,7 +312,7 @@ export default function Home() {
               </svg>
             </a>
 
-            <a target="_blank" href="https://www.instagram.com/de_rxy/">
+            <a target="_blank" href="https://www.instagram.com/__.uzo.__/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -325,7 +325,7 @@ export default function Home() {
               </svg>
             </a>
 
-            <a target="_blank" href="https://www.facebook.com/rxy.xy">
+            <a target="_blank" href="https://www.facebook.com/ttttttagasiehvege">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
