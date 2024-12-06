@@ -121,7 +121,7 @@ export default function Home() {
           </div>
 
           <div className="pfp">
-            <img src="https://files.catbox.moe/e4ashy.jpg" />
+            <img src="https://files.catbox.moe/mmj9hc.jpg" />
           </div>
         </section>
 
