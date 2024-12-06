@@ -139,16 +139,16 @@ export default function Home() {
         <section className="flex flex-col gap-6 h1_font">
           <h1>Education</h1>
           <Education
-            img="https://files.catbox.moe/g1zy39.jpg"
-            name="Alfred International School"
+            img="https://files.catbox.moe/yh8rdz.jpeg"
+            name="A.K. School and College"
             more_info="Elementary School"
-            date="June 2008 - July 2019"
+            date="June 2007 - July 2017"
           />
           <Education
-            img="https://files.catbox.moe/9yubdd.png"
-            name="Dhaka College"
+            img="https://files.catbox.moe/tu4f9f.png"
+            name="Motijheel Ideal School and College"
             more_info="Educational institution of Bangladesh"
-            date="Sep 2019 - April 2021"
+            date="Sep 2017 - April 2019"
           />
           <Education
             img="https://files.catbox.moe/59r79w.png"
@@ -161,17 +161,22 @@ export default function Home() {
         <section className="w-full flex flex-col gap-1 h-32 h1_font">
           <h1>Skills</h1>
           <div className="flex flex-wrap gap-1 w-full">
-            <Skill skill="React" />
-            <Skill skill="Next.Js" />
-            <Skill skill="JavaScript" />
-            <Skill skill="Node.Js" />
-            <Skill skill="Electron" />
-            <Skill skill="Express" />
-            <Skill skill="Python" />
-            <Skill skill="Go" />
-            <Skill skill="Java" />
-            <Skill skill="C#" />
-            <Skill skill="C++" />
+            {[
+              "React",
+              "Next.Js",
+              "Vite.Js",
+              "JavaScript",
+              "Node.Js",
+              "Electron",
+              "Express",
+              "Python",
+              "Go",
+              "Java",
+              "C#",
+              "C++",
+            ].map((skill) => (
+              <Skill skill={skill} />
+            ))}
           </div>
         </section>
 
@@ -246,16 +251,14 @@ export default function Home() {
             </a>
             <div className="project_card_details">
               <div className="mx-1">
-                <h1 className="font-semibold my-1">
-                  My Previous Portfolio
-                </h1>
+                <h1 className="font-semibold my-1">My Previous Portfolio</h1>
                 <p className="text-[var(--third-text-color)]">
                   Oct 2024 - Oct 2024
                 </p>
                 <p className="text-[var(--second-text-color)] text-sm">
-                  I created this portfolio using Next.js, with
-                  MySQL as the database. Data is served to the webpage through a
-                  Node.js Express API.
+                  I created this portfolio using Next.js, with MySQL as the
+                  database. Data is served to the webpage through a Node.js
+                  Express API.
                 </p>
               </div>
 
@@ -295,7 +298,7 @@ export default function Home() {
               Ready to make it Official?
             </p>
 
-            <a href="mailto:angshusadiq@gmail.com">Get in touch</a>
+            <a href="mailto:urbanajaman.orthee@gmail.com">Get in touch</a>
           </div>
 
           <div className="flex gap-4">
@@ -325,7 +328,10 @@ export default function Home() {
               </svg>
             </a>
 
-            <a target="_blank" href="https://www.facebook.com/ttttttagasiehvege">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/ttttttagasiehvege"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
