@@ -17,6 +17,7 @@ export const metadata = {
   description: "My personal portfolio",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
