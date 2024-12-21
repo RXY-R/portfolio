@@ -78,7 +78,6 @@ export default function Home() {
 
   //#region Animations
   const contentRef = useRef(null);
-  const scrambleTextRef = useRef(null);
 
   useEffect(() => {
     gsap.fromTo(
