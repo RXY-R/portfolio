@@ -4,7 +4,7 @@ import "./education.css";
 
 export default function Education({ img, name, more_info, date }) {
   const [InHovering, setInHovering] = useState(false);
-  
+
   return (
     <div
       className="cursor-pointer max-[420px]w-[624px] h-[48px] flex"
@@ -15,7 +15,7 @@ export default function Education({ img, name, more_info, date }) {
         <img src={img} />
         <div className="edu_details_container">
           <div className="flex items-center text-base">
-            <h1>{name}</h1>
+            <h1 className="whitespace-nowrap">{name}</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
